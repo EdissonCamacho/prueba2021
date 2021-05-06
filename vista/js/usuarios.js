@@ -24,10 +24,10 @@ $(document).ready(function() {
 
             }
 
-        })
+        });
 
 
-    })
+    });
 
     $("#btnModificar").click(function() {
 
@@ -52,15 +52,15 @@ $(document).ready(function() {
 
             }
 
-        })
+        });
 
 
 
 
-    })
+    });
 
 
 
 
 
-})
+});

@@ -8,7 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='vista/css/main.css'>
 
-    <script src='vista/js/usuarios.js'></script>
+    
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -22,6 +22,7 @@
     <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
 
+    <script src='vista/js/main.js'></script>
 </head>
 
 <body>
@@ -54,14 +55,15 @@
                 <form action="">
                     <div class="form-group">
                         <label for="txtNombres">Nombre:</label>
-                        <input type="text" class="form-control" id="txtNombres">
+                        <input id="txtNombres"  type="text" class="form-control" >
                     </div>
                     <div class="form-group">
                         <label for="txtApellidos">Apellido:</label>
-                        <input type="text" class="form-control" id="txtApellidos">
+                        <input id="txtApellidos" type="text" class="form-control" >
                     </div>
 
                     <button id="btnGuardar" type="button" class="btn btn-primary">Registrar</button>
+                    <button id="btnModificar" type="button" class="btn btn-primary">Modificar </button>
                 </form>
 
 
