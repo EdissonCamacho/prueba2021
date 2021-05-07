@@ -16,11 +16,15 @@ class usuariosControlador
     public function ctrlInsertar()
     {
         $objModelo= usuariosModelo::mdlInsertar($this->nombres,$this->apellidos);
-        json_encode($objModelo);
+       echo json_encode($objModelo);
     }
 
     public function ctrlModificar()
     {
+        $objModificar=usuariosModelo::mdlModificar($this->nombres,$this->apellidos);
+        echo  json_encode($objModificar);
+
+
     }
 
     public function ctrlEliminar()
@@ -42,4 +46,11 @@ if (isset($_POST["nombres"]) && isset($_POST["apellidos"] )) {
 
 
 
+}
+
+if (isset($_POST["nombreM"] ) && isset($_POST["apellidoM"]) ) {
+    $objM = new usuariosControlador();
+    $objM->nombres = $_POST["nombreM"];
+    $objM->apellidos=$_POST["apellidoM"];
+    $objM->ctrlModificar();
 }

@@ -6,8 +6,8 @@ $(document).ready(function() {
 
     function cargarBoton() {
 
-        var nombre = 'Edisson';
-        var apellidos = 'CamachoCamargo';
+        var nombre = "Edisson";
+        var apellidos = "Camacho Camargo";
         var concatenacion = '';
 
 
@@ -68,6 +68,8 @@ $(document).ready(function() {
             processData: false,
             success: function(respuesta) {
 
+                alert(respuesta);
+
 
 
 
@@ -88,12 +90,12 @@ $(document).ready(function() {
 
 
 
-    $("#btnRegistrar").click(function() {
+    $("#btnGuardar").click(function() {
 
 
-        var nombres = $("#txtNombre").val();
-        var apellidos = $("#txtApellido").val();
-        alert(nombres);
+        var nombres = $("#txtNombres").val();
+        var apellidos = $("#txtApellidos").val();
+
         var objData = new FormData();
         objData.append("nombres", nombres);
         objData.append("apellidos", apellidos);
@@ -107,6 +109,8 @@ $(document).ready(function() {
             contentType: false,
             processData: false,
             success: function(respuesta) {
+
+                alert(respuesta);
 
 
 
